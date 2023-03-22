@@ -56,7 +56,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![image station preview](https://commons.wikimedia.org/wiki/File:North_Station_departure_board,_December_2011.jpg)
+![North Station Signboard](https://github.com/coding-to-music/mbta-departure-board-react-redux-material/blob/main/images/800px-North_Station_departure_board_December_2011.jpg?raw=true)
 
 
 ### useful links
