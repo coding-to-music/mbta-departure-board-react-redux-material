@@ -25,7 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "deploy": "git add . && git commit -m Build && git push",
     "lint": "eslint",
     "prettier": "prettier  --config prettier.config.js --write -c src"
   },
