@@ -35,9 +35,7 @@ const ScheduleRow = React.memo(({ record }) => {
                 {description}
             </TableCell>
             <TableCell align="right" style={{ width: 160 }}>
-                {departure_time
-                    ? new Date(departure_time).toLocaleTimeString('en-US')
-                    : '--:--:--'}
+                {departure_time ? new Date(departure_time).toLocaleTimeString('en-US') : '--:--:--'}
             </TableCell>
             <TableCell align="center">{direction_destinations[direction_id]}</TableCell>
             <TableCell align="right" />

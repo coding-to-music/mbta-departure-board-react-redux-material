@@ -18,7 +18,7 @@ const getCurrentDate = () => {
 const timeFormat = { hour: '2-digit', minute: '2-digit', hour12: false }
 
 function* fetchStopSchedule({ payload: stopId }) {
-    const timeNow = () => (new Date())
+    const timeNow = () => new Date()
     // const after5Minutes = () => new Date(timeNow().getTime() + 5 * 60000)
 
     const { data } = yield call(httpClient.request, apiRoutes.schedules, {
