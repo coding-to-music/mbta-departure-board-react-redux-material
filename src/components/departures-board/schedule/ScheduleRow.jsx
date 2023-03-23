@@ -21,7 +21,8 @@ const ScheduleRow = React.memo(({ record }) => {
         attributes: { departure_time, direction_id },
         relationships: {
             route: {
-                attributes: { color, description, fare_class, direction_destinations },
+                attributes: { color, description, direction_destinations },
+                // attributes: { color, description, fare_class, direction_destinations },
             },
         },
     } = record
