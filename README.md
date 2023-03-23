@@ -107,3 +107,36 @@ Local Bus	10:48:00 PM	Fields Corner Loop
 Local Bus	10:50:00 PM	Fields Corner Loop		
 Local Bus	10:50:00 PM	Fields Corner Loop	
 ```
+
+## Many warnings via browser control panel
+
+```
+vendors~main.chunk.js:22519 Material-UI: You have provided an out-of-range value `undefined` for the select component.
+Consider providing a value that matches one of the available options or ''.
+The available values are "".
+```
+
+```
+vendors~main.chunk.js:85553 Warning: A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://reactjs.org/link/controlled-components
+    at input
+    at SelectInput (http://localhost:3000/static/js/vendors~main.chunk.js:22212:24)
+    at div
+    at InputBase (http://localhost:3000/static/js/vendors~main.chunk.js:14603:30)
+    at WithStyles (http://localhost:3000/static/js/vendors~main.chunk.js:39311:31)
+    at Input (http://localhost:3000/static/js/vendors~main.chunk.js:14008:32)
+    at WithStyles (http://localhost:3000/static/js/vendors~main.chunk.js:39311:31)
+    at Select (http://localhost:3000/static/js/vendors~main.chunk.js:21913:32)
+    at WithStyles (http://localhost:3000/static/js/vendors~main.chunk.js:39311:31)
+    at div
+    at FormControl (http://localhost:3000/static/js/vendors~main.chunk.js:10653:24)
+    at WithStyles (http://localhost:3000/static/js/vendors~main.chunk.js:39311:31)
+    at div
+    at ChooseStop (http://localhost:3000/static/js/main.chunk.js:1179:19)
+    at div
+    at ScheduleHeader (http://localhost:3000/static/js/main.chunk.js:1634:19)
+    at div
+    at DeparturesBoard (http://localhost:3000/static/js/main.chunk.js:1020:19)
+    at ThemeProvider (http://localhost:3000/static/js/vendors~main.chunk.js:38013:24)
+    at Provider (http://localhost:3000/static/js/vendors~main.chunk.js:86499:20)
+    at App
+```
