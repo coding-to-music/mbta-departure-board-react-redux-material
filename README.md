@@ -66,3 +66,44 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [API Swagger](https://api-v3.mbta.com/docs/swagger/index.html#/Trip)
 - [Data visualization](https://www.mbta.com/schedules/subway)
 - [Stops route](https://www.mbta.com/stops/subway#subway-tab)
+
+## Error messages via npm run start
+
+```
+npm run start
+```
+
+Output
+
+```
+src/api/hooks/useFetch.js
+  Line 33:8:  React Hook React.useEffect has missing dependencies: 'options' and 'url'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/redux/departures-board/departures-board.sagas.js
+  Line 43:1:  Assign array to a variable before exporting as module default  import/no-anonymous-default-export
+
+src/redux/departures-board/index.js
+  Line 9:1:  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+src/redux/store.js
+  Line 2:1:  'redux-logger' should be listed in the project's dependencies, not devDependencies  import/no-extraneous-dependencies
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+```
+
+## It works, pull stop from dropdown and view upcoming schedule
+
+```
+Wednesday
+3/22/2023
+Choose Stop
+place-fldcr
+Time
+10:30:31 PM
+Type	Time	Destination	Train #	Status
+Local Bus	10:41:00 PM	Fields Corner Loop		
+Local Bus	10:48:00 PM	Fields Corner Loop		
+Local Bus	10:50:00 PM	Fields Corner Loop		
+Local Bus	10:50:00 PM	Fields Corner Loop	
+```
