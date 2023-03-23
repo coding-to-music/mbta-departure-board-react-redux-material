@@ -44,7 +44,7 @@ const ChooseStop = () => {
             {errors && (
                 <div>
                     {errors.map(
-                        ({ status, title, source, detail }) => `${status} -> ${title || detail} -> param: ${source.parameter}`
+                        ({ status, title, source, detail }) => `${status} -> ${title || detail} -> param: ${source.parameter}`,
                     )}
                 </div>
             )}
@@ -57,9 +57,7 @@ const ChooseStop = () => {
                     value={value}
                     onChange={handleChange}
                 >
-                    {!loading &&
-                        loaded &&
-                        data.map((x) => <MenuItem value={x.id}>{`${x.attributes.name}`}</MenuItem>)}
+                    {!loading && loaded && data.map((x) => <MenuItem value={x.id}>{`${x.attributes.name}`}</MenuItem>)}
                 </Select>
             </FormControl>
         </div>
